@@ -1,0 +1,128 @@
+<!-- This will look like shit -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+  
+  <link rel="shortcut icon" href="./static/img/chillin-cat.gif" type="image/x-icon" />
+  
+  <!--SEO-->
+  <title>dEV</title>
+  <meta name="title" content="dEV">
+  <meta name="description" content="Just another Geek & Tech enthusiat">
+  <meta name="keywords" content="Web dev , dev , student , JavaScript , Code , Programmer">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="2 days">
+  <meta name="author" content="dEV">
+
+  <!-- Page previews -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="dEV">
+  <meta property="og:description" content="Just another web dev">
+  <meta property="og:image" content="./static/img/chillin-cat.gif">
+  
+  
+  <!-- Page previews -->
+  <meta property="twitter:card" conten="summary_large_image">
+  <meta property="twitter:url" content="https://roydev19.github.io/boutme/">
+  <meta property="twitter:title" content="dEV">
+  <meta property="twitter:description" content="Just another web dev">
+  <meta property="twitter:image" content="./static/img/chillin-cat.gif">
+  
+  <!-- Analytics -->
+  <script async defer data-website-id="1930155d-6bdc-4e1c-8df8-d339cb58f912" src="https://analytics.up.railway.app/umami.js"></script>
+
+  
+  <script defer src="./static/js/typeit.js" ></script>
+  <script defer src="./static/js/main.js" ></script>
+  <link rel="stylesheet" href="./static/css/style.css">
+</head>
+
+<body>
+  
+  <header>
+      <nav>
+          <ul>
+              <img src="./static/img/chillin-cat.gif" alt="Logo alt" />
+              <div>
+                  <li id='indexBtn'>Index</li>
+              </div>
+          </ul>
+      </nav>
+  </header>
+  <div class="content">
+         <img class="logo-img" src="./static/img/chillin-cat.gif" alt="Error" />
+         <br />
+         <br />
+         <hr />
+         <div class="text-with-gif"><h2>Hola... I'm dEV . <h2></h2><img src="./static/img/hi.gif" alt="" /></div>
+         <hr />
+         <div class="typeit"> <h3>I'm </h3> <h3 id="hehe"></h3></div>
+         <hr />
+         <h3> &#60;Tools and Technologies/&#62;</h3>
+         <div class="tools">
+            <h3 class="tool"> JavaScript</h3> <h3 class="tool"> NuxtJs </h3> <h3 class="tool"> CSS3</h3> <h3 class="tool"> HTML5 </h3> <h3 class="tool"> NodeJS</h3> <h3 class="tool"> Vercel</h3> <h3 class="tool"> Cloudflare</h3> <h3 class="tool"> Deta.sh</h3> <h3 class="tool"> Firebase</h3> <h3 class="tool"> OCI</h3> <h3 class="tool"> Hugo</h3> <h3 class="tool"> Vuetify</h3> <h3 class="tool"> Bootstrap</h3> <h3 class="tool"> SpckEditor</h3> <h3 class="tool"> VS Code</h3>
+         </div>
+         <hr />
+         <h3>&#60;About me/&#62;</h3>
+         <p>Oh! Hi, I'm dEV. Ig You already knew it. I'm a Geek & Tech enthusiat, live in India and Love Neko :)</p>
+         <hr />
+         <h3>&#60;ReachMe/&#62;</h3>
+         <div class="social-btns">
+            <button class="social telegram" id="telegram"><img src="./static/img/icons/telegram.svg" alt="tg" /></button><button class="social github" id="github"><img src="./static/img/icons/github.svg" alt="gh" /></button><button class="social mail" id="mail"><img src="./static/img/icons/mail.svg" alt="mail" /></button> 
+         </div>
+         <br />
+         <hr />
+         <h3>&#60;Note/&#62;</h3>
+         <p>> It took more than 16 hours to complete this from scratch.</p>
+         <p>> Recommended to use chromium browser(chrome, brave ...) for better experience!</p>
+         
+  </div>
+  <div class="center">
+          <div id="notification">
+            <h4>Copied to Clipboard !</h4>
+         </div>
+  </div>
+  <footer>
+     © <a href="https://roydev19.github.io/boutme/"> dEV</a>
+  </footer>
+  <script type="text/javascript" charset="utf-8">
+      
+      let telegram = document.getElementById('telegram');
+      let twitter = document.getElementById('twitter');
+      let github = document.getElementById('github');
+      let mail = document.getElementById('mail');
+      
+      let toast = document.getElementById('toast');
+      
+      telegram.addEventListener('click', () => {
+        window.open('https://t.me/d3vR19', '_blank');
+      });
+      
+      github.addEventListener('click', () => {
+        window.open('https://github.com/roydev19', '_blank');
+      });
+      
+      mail.addEventListener('click', () => {
+        window.open('mailto:roy.d_@outlook.com', '_blank');
+      });
+      
+      // when maths student doin coding. don't expect nice code 
+
+      toast.addEventListener('click', () =>{
+        notifi.style =`animation: fading 2s`;
+        navigator.clipboard.writeText('dEV#5573');
+        setTimeout(()=>{
+            notifi.style.display = 'none'
+           }, 2500)
+        });
+        
+
+  </script>
+</body>
+</html>

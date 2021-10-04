@@ -1,0 +1,337 @@
+/*Imma noob.so this will look like shit*/
+
+:root {
+    --background-color: #03071E;
+    --color: #D1DEDE;
+    --selection-bg: #006466 ;
+    --border-color: #46464666;
+    --tool-bg: #D00000;
+    --tool-color: #FFCFCF ;
+    --tool-hover: #9D0208;
+    --link-color: #C58882;
+    --social-bg: #6A040F;
+    --stat-bg: #FFBA08;
+    --stat-color: #FFDE97;
+    --stat-hover: #FAA307;
+    --stat-maroon-bg: #370617;
+    --stat-maroon-color: #9D0208;
+    --stat-maroon-hover: #570000;
+}
+
+body {
+    font-family: monospace;
+    background-color: var(--background-color);
+    color: var(--color);
+    margin: 0;
+    overscroll-behavior: none;
+}
+
+footer a , .content a , header nav ul li , .tool , .stat , .stat-maroon , .social{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: none;
+}
+.center , footer{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+hr {
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-top: 1px solid var(--border-color);
+}
+
+.content {
+    margin: 10px;
+}
+
+.logo-img {
+    height: 200px;
+    width: 200px;
+    border-radius: 0 20% 20% 20%;
+    border: 4px solid var(--border-color)
+}
+
+.text-with-gif {
+    display: flex;
+    flex-direction: row;
+}
+
+.text-with-gif img {
+    margin: 20px;
+    height: 30px;
+    width: 30px;
+}
+
+.typeit {
+    display: flex;
+    flex-direction: row;
+    gap: 10px
+}
+
+.content p {
+    text-align: justify
+}
+
+.content a {
+    color: var(--color);
+    transition: 300ms
+}
+
+.content a:hover {
+    color: var(--link-color);
+}
+
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 15px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-color);
+    z-index: 5;
+}
+
+header nav ul {
+    margin: 0;
+}
+
+header nav img {
+    position: absolute;
+    top: 13px;
+    left: 10px;
+    height: 30px;
+    width: 30px;
+    border: 4px solid var(--border-color)
+}
+
+header nav ul div {
+    gap: 19px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    position: absolute;
+    right: 19px;
+}
+
+header nav ul li:hover {
+    color: var(--link-color);
+}
+
+header nav ul li {
+    transition: 300ms;
+}
+
+hr {
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-top: 1px solid var(--border-color);
+}
+
+.tools {
+    display: flex;
+    flex-wrap: wrap;
+}
+.tool , .stat , .stat-maroon , .social {
+    padding: 7px;
+    border-radius: 10px;
+    margin-right: 10px;
+    transform: scale(1);
+    transition: 400ms;
+}
+.tool {
+    background: var(--tool-bg);
+    color: var(--tool-color);
+}
+
+.tool:hover {
+    background-color: var(--tool-hover);
+    animation: size 400ms;
+}
+.stat {
+    background: var(--stat-bg);
+    color: var(--stat-color);
+}
+
+.stat:hover {
+    background: var(--stat-hover);
+    animation: size 400ms;
+}
+
+.stat-maroon:hover {
+    background: var(--stat-maroon-hover);
+    animation: size 400ms;
+}
+
+.stat-maroon {
+    background: var(--stat-maroon-bg);
+    color: var(--stat-maroon-color);
+}
+@keyframes size {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(.95);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    75% {
+        transform: scale(.95);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+footer {
+    backdrop-filter: blur(10px);
+    position:sticky;
+    bottom: 0;
+    right: 100%;
+    left: 50%;
+    gap: 10px;
+    padding: 10px;
+    border-top: var(--border-color) solid 1px;
+}
+
+footer a {
+    color: var(--color);
+    transition: 300ms
+}
+.social{
+    background-color: var(--social-bg);
+    color: var(--color);
+    width: 40px;
+    height: 40px;
+    transition: 500ms;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+}
+.social img{
+    height: 20px;
+    width: 20px;
+}
+.social:hover{
+    animation: size 400ms;
+}
+.telegram:hover{
+    background-color:#0B9DEA;
+}
+.github:hover{
+    background-color:#313131;
+}
+.mail:hover{
+    background-color: #000000;
+}
+.twitter:hover{
+    background-color: #2CA4FF;
+}
+.circle{
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    background-color: #FF0E0E;
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    animation: hehe 900ms infinite;
+}
+.circle-green {
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    background-color: #09D834;
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    animation: hehe-green 900ms infinite;
+}
+
+@keyframes hehe {
+    0% {
+        box-shadow: 0 0 0 0 #FF0E0E70;
+    }
+    100% {
+        box-shadow: 0 0 0 7px #FF0E0E00;
+    }
+}
+@keyframes hehe-green {
+    0%{
+       box-shadow: 0 0 0 0 #09D83470 ;
+    }
+    100% {
+        box-shadow: 0 0 0 7px #09D83400;
+    }
+}
+#notification{
+    position: fixed;
+    top:-1000px;
+    z-index: 20;
+}
+#notification h4{
+    padding: 10px;
+    color: var(--color);
+    background-color: var(--background-color);
+    border-radius: 12px;
+    border: var(--border-color) solid 1px;
+}
+
+@keyframes fading{
+    0%{
+        top: 100px;
+        opacity: .7;
+        transform: scale(.7)
+    }
+    40%{
+        opacity:1;
+        transform: scale(1.05)
+    }
+    70%{
+        opacity:1;
+        top:100px;
+        transform: scale(.95)
+    }
+}
+#loading{
+    height: 0.1px;
+    width: 0.1px;
+    background-color: transparent;
+    border-radius: 50%;
+    animation: loading 900ms infinite;
+}
+@keyframes loading {
+    0% {
+        box-shadow: 0 0 0 0 #FFFFFF;
+    }
+    100% {
+        box-shadow: 0 0 0 20px #FFFFFF00;
+    }
+}
+::selection {
+    background-color: #D4D4D4;
+    color: #000000;
+}
+.social-btns{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+}
